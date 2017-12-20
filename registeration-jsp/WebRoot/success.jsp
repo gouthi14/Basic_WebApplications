@@ -1,0 +1,75 @@
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><tittle> java class registeration</tittle>
+<style>
+*
+{
+margin:0px;
+}
+ul{
+
+list-style:none
+}
+a{
+text-decoration:none;
+color:white;
+}
+li{
+//border:1px red solid;
+width:160px;
+height:40px;
+background-color:red;
+text-align:center;
+margin-right:1px;
+line-height:40px;
+float:left;
+}
+li:hover{
+background-color:yellow;
+cursor:pointer;
+}
+h1{
+font-family:Arial;
+font-color:Green;
+background-color:yellow;
+text-align:center;
+line-hight:100px;
+margin:0px;
+}
+h2{
+font-family:Arial;
+font-color:red;
+background-color:green;
+text-align:right;
+}
+table
+{
+font-family:Arial;
+text-align:center;
+background-color:pink;
+line-hieght:100px;
+font-color:green;
+table-align:center;
+}
+form{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1>WELCOME TO GOUTHAM'S PAGE</h1><hr>
+<h2>INSTRUCTER MR.VENKAT</h2><hr>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">CLASS TIMES</a></li>
+<li><a href="#">CONTACT</a></li>
+<li><a href="#">TECHNOLOGIES</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Hours_Cal"
+  id="myeclipse.1495602931868"
+  context-root="/Hours_Cal"
+  j2ee-spec="5.0"
+  archive="Hours_Cal.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="lap" class="Laptop">
+<constructor-arg value="10000"></constructor-arg>
+<constructor-arg value="DELL"></constructor-arg>
+<constructor-arg value="LINUX"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key="2.0" value="2011"></entry>
+<entry key="3.0" value="2013"></entry>
+<entry key="5.0" value="2014"></entry>
+<entry key="10" value="2016"></entry>
+</map>
+</constructor-arg>
+</bean>
+
+</beans>

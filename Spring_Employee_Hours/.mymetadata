@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Spring_Employee_Hours"
+  id="myeclipse.1498748180461"
+  context-root="/Spring_Employee_Hours"
+  j2ee-spec="5.0"
+  archive="Spring_Employee_Hours.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

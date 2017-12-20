@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="webServiceWizard">
+		<item value="false" key="WSDL_FILE_USED"/>
+		<list key="WSDL_URL_KEY">
+			<item value="http://localhost:8080/Webservice1/Helloworld?wsdl"/>
+		</list>
+	</section>
+</section>

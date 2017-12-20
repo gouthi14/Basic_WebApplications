@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Strutsjdbc"
+  id="myeclipse.1473355073858"
+  context-root="/Strutsjdbc"
+  j2ee-spec="5.0"
+  archive="Strutsjdbc.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

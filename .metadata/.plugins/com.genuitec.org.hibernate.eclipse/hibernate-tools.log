@@ -1,0 +1,80 @@
+2016-10-03 23:42:11,778 0      [       Worker-4] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-03 23:42:13,229 1451   [       Worker-4] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-03 23:42:13,230 1452   [       Worker-4] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-04 20:17:55,572 16     [      Worker-25] WARN  .hibernate.cfg.SettingsFactory  - Could not obtain connection metadata
+java.sql.SQLException: Io exception: Invalid number format for port number
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:146)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:255)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:414)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.hibernate.console.FakeDelegatingDriver.connect(FakeDelegatingDriver.java:40)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:154)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2005)
+	at com.genuitec.eclipse.hibernate.wizards.MEJDBCMetaDataConfiguration.readFromJDBC(MEJDBCMetaDataConfiguration.java:72)
+	at com.genuitec.eclipse.hibernate.wizards.GenerateArtifactsJob$7.execute(GenerateArtifactsJob.java:891)
+	at org.hibernate.console.execution.DefaultExecutionContext.execute(DefaultExecutionContext.java:64)
+	at org.hibernate.console.ConsoleConfiguration.execute(ConsoleConfiguration.java:95)
+	at com.genuitec.eclipse.hibernate.wizards.GenerateArtifactsJob.buildConfiguration(GenerateArtifactsJob.java:872)
+	at com.genuitec.eclipse.hibernate.wizards.GenerateArtifactsJob.run(GenerateArtifactsJob.java:412)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+2016-10-04 20:17:55,741 185    [      Worker-25] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-04 22:01:13,321 6197765 [      Worker-25] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-04 22:01:13,612 6198056 [      Worker-25] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-04 22:01:13,613 6198057 [      Worker-25] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-05 21:49:16,588 0      [       Worker-0] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-05 21:49:17,048 460    [       Worker-0] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-05 21:49:17,048 460    [       Worker-0] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-05 22:03:59,613 883025 [      Worker-10] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-05 22:03:59,775 883187 [      Worker-10] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-05 22:03:59,776 883188 [      Worker-10] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-05 22:05:11,209 954621 [       Worker-5] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-05 22:05:11,340 954752 [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-05 22:05:11,340 954752 [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-05 22:06:16,776 1020188 [      Worker-12] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-05 22:06:16,894 1020306 [      Worker-12] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER. Asking rev.eng. strategy
+2016-10-05 22:06:16,894 1020306 [      Worker-12] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER
+2016-10-06 17:41:53,348 0      [       Worker-2] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-06 17:41:54,450 1102   [       Worker-2] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-06 17:41:54,466 1118   [       Worker-2] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-06 18:22:54,385 2461037 [       Worker-1] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-06 18:22:54,532 2461184 [       Worker-1] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-06 18:22:54,532 2461184 [       Worker-1] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-07 21:51:43,793 1      [       Worker-6] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-07 21:51:44,220 428    [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-07 21:51:44,220 428    [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-07 22:06:05,421 861629 [       Worker-0] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-07 22:06:05,541 861749 [       Worker-0] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-07 22:06:05,541 861749 [       Worker-0] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-07 22:17:49,749 1565957 [       Worker-6] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-07 22:17:49,969 1566177 [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-07 22:17:49,969 1566177 [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-08 15:10:07,406 0      [       Worker-5] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-08 15:10:07,644 238    [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-08 15:10:07,644 238    [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-08 15:24:18,144 850738 [       Worker-9] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-08 15:24:18,222 850816 [       Worker-9] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-08 15:24:18,222 850816 [       Worker-9] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-08 16:14:25,611 3858205 [       Worker-8] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-08 16:14:25,726 3858320 [       Worker-8] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-08 16:14:25,726 3858320 [       Worker-8] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-09 14:26:14,282 0      [       Worker-7] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-09 14:26:14,799 517    [       Worker-7] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-09 14:26:14,799 517    [       Worker-7] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-09 14:50:42,986 1468704 [       Worker-6] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-09 14:50:43,171 1468889 [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-09 14:50:43,171 1468889 [       Worker-6] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-10-10 21:59:49,275 0      [       Worker-5] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-10-10 21:59:50,831 1556   [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBERDEMO. Asking rev.eng. strategy
+2016-10-10 21:59:50,832 1557   [       Worker-5] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBERDEMO
+2016-11-14 20:48:29,114 0      [       Worker-0] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-11-15 10:13:11,933 0      [       Worker-2] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-01-11 16:07:09,996 0      [      Worker-10] WARN  bernate.dialect.Oracle9Dialect  - The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-01-11 16:07:11,846 1850   [      Worker-10] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in HIBER1. Asking rev.eng. strategy
+2017-01-11 16:07:11,846 1850   [      Worker-10] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for HIBER1

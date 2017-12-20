@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="validation-jsp"
+  id="myeclipse.1472267214851"
+  context-root="/validation-jsp"
+  j2ee-spec="5.0"
+  archive="validation-jsp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

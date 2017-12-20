@@ -1,0 +1,176 @@
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Employee Hours</title>
+<style type="text/css">
+*
+body {
+height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+margin:0px;
+
+ul{
+
+list-style:none
+}
+a{
+text-decoration:none;
+color:#FFEBCD;
+font-family:"Times New Roman", Georgia, Serif;
+font-size:20px;
+list-style:none;
+}
+li{
+
+border:1px #FFEBCD solid;
+width:160px;
+height:40px;
+background-color:#4682b4;
+text-align:center;
+margin-right:1px;
+line-height:40px;
+float:left;
+list-style:none;
+}
+li:hover{
+background-color:#CD853F;
+}
+h1{
+font-family:Times New Roman", Georgia, Serif;
+font-color:Green;
+font-color:#FFEBCD;
+text-align:center;
+line-hight:100px;
+margin:0px;
+}
+h2{
+font-family:Times New Roman", Georgia, Serif;
+text-align:right;
+font-color:#FFEBCD;
+}
+table{
+font-family:Times New Roman", Georgia, Serif;
+font-size:20px;
+font-color:#FFEBCD;
+
+
+}
+</style>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+function calc(){
+  var n1=parseInt(document.getElementById('n1').value);
+  var n2=parseInt(document.getElementById('n2').value);
+   var n3=parseInt(document.getElementById('n3').value);
+    var n4=parseInt(document.getElementById('n4').value);
+	 var n5=parseInt(document.getElementById('n5').value);
+	  var n6=parseInt(document.getElementById('n6').value);
+	   var n7=parseInt(document.getElementById('n7').value);
+  var oper=document.getElementById('operators').value;
+  if(oper==='+'){
+   document.getElementById('result').value=n1+n2+n3+n4+n5+n6+n7;
+  }
+}
+</script>
+
+</head>
+<body background="C:\Users\gouthamgoud\Desktop\izeal_background/web_design_lg_b.jpg">
+
+<h1>WEL COME TO IZEAL INC<h1><hr>
+<h2>MANAGER: MR.VISHNU</h2><hr>
+<ul>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Izeal_inc.html">Home</a></li>
+<li><a href="http://www.izealinc.com/izealinc_solutions.html">Solutions</a></li>
+<li><a href="http://www.izealinc.com/izealinc_consulting_services.html">Services</a></li>
+<li><a href="http://www.izealinc.com/izealinc_careers.html">Careers</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Documents/timer_project.html">Register</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Login.html">Login</a></li>
+<li><a href="http://www.izealinc.com/izealinc_contactus.html">Contact Us</a></li>
+</ul>
+<h1>Calculating work hours for MAY</h1><hr/><br/>
+<ul>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Calculating_Hours.html">MAY'6TH</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Calculating_Hours.html">MAY'13TH</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Calculating_Hours.html">MAY'20TH</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Calculating_Hours.html">MAY'27TH</a></li>
+<li><a href="file:///C:/Users/gouthamgoud/Desktop/Calculating_Hours.html">JUNE'3</a></li>
+</ul>
+<br/>
+<table align="center" >
+<form action="Hcal.jsp">
+Enter your Name:
+<input type="text" name="name" ><br> 
+
+<tr><th>Work Day of Week</th><th>Hours</th></tr>
+
+<tr><td>Monday</td><td> 
+<input type="text" id="n1" name="monday" size="3" maxlength="4" value="" > 
+</td></tr> <br/>
+
+
+<tr><td>Tuesday</td> 
+<td><input type="text" id="n2" name="tuesday" size="3" maxlength="4" value="" > 
+</td></tr> <br/>
+
+
+<tr><td>Wednesday</td> 
+<td><input type="text" id="n3" name="wednesday" size="3" maxlength="4" value="" > 
+</td></tr> <br/>
+
+
+<tr><td>Thursday</td> 
+<td><input type="text" id="n4" name="thursday" size="3" maxlength="4" value="" > 
+</td></tr> <br/>
+
+
+<tr><td>Friday</td> 
+<td><input type="text" id="n5" name="friday" size="3" maxlength="4" value=""> 
+</td></tr> <br/>
+
+
+<tr><td>Saturday</td> 
+<td><input type="text" id="n6" name="saturday" size="3" maxlength="4" value="" > 
+</td></tr> <br/>
+
+
+
+<tr><td>Sunday</td> 
+<td><input type="text" id="n7" name="sunday" size="3" maxlength="4" value="" > 
+</td></tr><br/> 
+<tr><td>
+<select id="operators" align="center">
+<option value="+">+</option>
+</select>
+</td></tr>
+<tr><td>
+<button onclick="calc();">Total Hours</button>
+<input type="text" name="total" id="result"/><br/><br/>
+<input type="submit" value="Submit">
+ </td></tr>
+ </form>
+</table>
+
+
+</body>
+
+</html>

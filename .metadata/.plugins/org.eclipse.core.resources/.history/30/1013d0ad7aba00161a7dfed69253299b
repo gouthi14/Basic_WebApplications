@@ -1,0 +1,101 @@
+package org.spring.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.apache.log4j.Logger;
+
+import org.spring.domain.Springemp1;
+import org.springframework.service.Emp1services;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.portlet.ModelAndView;
+
+@Controller
+@RequestMapping("/main")
+
+public class Mycontroller {
+private static Logger logger=Logger.getLogger("controller");
+	
+	@Resource(name="PersonService")
+	
+	private Emp1services emp1services;
+	
+	
+	 @RequestMapping("/Viewdetails")  
+	    public ModelAndView showform(){  
+	        return new ModelAndView("empform","command",new Springemp1())  
+	
+	
+	
+	@RequestMapping(value="/person",method=RequestMethod.POST)
+	
+	public String getSpringemp1(Model model)
+	{
+		logger.debug("Requesting to dislay Information");
+		
+		List<Springemp1>persons=emp1services.getAll();
+		model.addAttribute("person",persons);
+		return "Mainpage";
+		
+	}
+	
+	@RequestMapping(value="/springemp1/add",method=RequestMethod.GET)
+	public String add(@RequestParam(value="firstName",required=true)String firstName,
+			          @RequestParam(value="lastName",required=true)String lastName,
+			          @RequestParam(value="department",required=true)String department,
+			          @RequestParam(value="salary",required=true)float salary)
+	{
+	logger.debug("add new person");
+	Emp1services.add(firstName,lastName,department,salary);
+	return "addedpage";
+}
+	
+	
+	@RequestMapping(value="/persons/delete",method=RequestMethod.GET)	
+	public String delete(@RequestParam(value="id",required=true)Integer id,Model model)
+	{
+		logger.debug("Del Existing Person Info");
+		Emp1services.delete(id);
+		model.addAttribute("id",id);
+		return "deletepage";
+	}
+
+	
+	@RequestMapping(value="/persons/add",method=RequestMethod.GET)
+	public String delete(@RequestParam(value="id",required=true) Integer id,
+			@RequestParam(value="firstName",required=true)String firstName,
+	          @RequestParam(value="lastName",required=true)String lastName,
+	          @RequestParam(value="department",required=true)String department,
+	@RequestParam(value="salary",required=true)float salary,Model model)
+	
+	{
+		logger.debug("Edit existing Person Info");
+		Emp1services.edit(id,firstName,lastName,department,salary);
+		model.addAttribute("id",id);
+		
+return "editpage";
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+		
+
+
+
+    }
+	
+	
+
+
+

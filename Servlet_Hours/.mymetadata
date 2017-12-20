@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Servlet_Hours"
+  id="myeclipse.1495936057206"
+  context-root="/Servlet_Hours"
+  j2ee-spec="5.0"
+  archive="Servlet_Hours.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

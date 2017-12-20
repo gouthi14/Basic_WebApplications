@@ -1,0 +1,42 @@
+package beanclass;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts.action.Action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+public class UserAction extends Action
+{
+public ActionForward execute(ActionMapping mapping,ActionForm form,HttpServletRequest request,HttpServletResponse response)
+throws Exception
+{
+	HttpSession ses=request.getSession(true);
+	action obj=(action)form;
+	String firstName=obj.getFirstName();
+	String lastName=obj.getLastName();
+	String userName=obj.getUserName();
+	String password=obj.getPassword();
+	String email=obj.getEmail();
+	String phoneNumber=obj.getPhoneNumber();
+dao da=new dao();
+da.insertData(firstName, lastName, userName, password, email, phoneNumber);
+ses.setAttribute("firstName", firstName);
+ses.setAttribute("lastName", lastName);
+ses.setAttribute("userName", userName);
+ses.setAttribute("password", password);
+ses.setAttribute("email", email);
+ses.setAttribute("phoneNumber", phoneNumber);
+if(userName.equals("goutham")||password.equals("goutham"))
+{
+	return mapping.findForward("error");
+	
+}
+	return mapping.findForward("success");
+	
+	
+}
+}

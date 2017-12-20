@@ -1,0 +1,31 @@
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class Mymain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ApplicationContext act=new ClassPathXmlApplicationContext("applicationContext.xml");
+		HstudentDao obj=(HstudentDao)act.getBean("dao");
+		Hstudent hs=new Hstudent();
+		hs.setId(4);
+		hs.setName("venkata");
+		hs.setDepartment("java");
+		obj.saveHstudent(hs);
+		
+		Hstudent hs1=new Hstudent();
+		hs.setId(2);
+		hs.setDepartment("update");
+		
+		obj.updateHstudent(hs1);
+		
+		
+		
+	}
+
+}

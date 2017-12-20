@@ -1,0 +1,16 @@
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<%
+String name=request.getParameter("uname");
+String psd=request.getParameter("psd");
+out.println("hey welcom"+name);
+String id=config.getInitParameter("go");
+out.println("id is"+id);
+String email=config.getInitParameter("mail");
+out.println("email is"+email);
+
+%>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="assginvalidation-jsp"
+  id="myeclipse.1472326266538"
+  context-root="/assginvalidation-jsp"
+  j2ee-spec="5.0"
+  archive="assginvalidation-jsp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

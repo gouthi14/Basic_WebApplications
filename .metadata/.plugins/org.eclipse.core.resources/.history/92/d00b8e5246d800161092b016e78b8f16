@@ -1,0 +1,39 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Configuration conf=new Configuration();
+		conf.configure("hibernate.cfg.xml");
+		SessionFactory session=conf.buildSessionFactory();
+		Session hsession=session.openSession();
+		Transaction tx=hsession.beginTransaction();
+		Hiber1 obj=new Hiber1();
+		obj.setId(2);
+		obj.setFirstName("thuluva");
+		obj.setLastName("goutham");
+		hsession.persist(obj);
+		System.out.println("Data inserted");
+		
+		
+		
+		
+		
+		tx.commit();
+		
+		hsession.close();
+		
+		
+		
+	}
+
+}
